@@ -1,24 +1,29 @@
-# README
+# Portfolio Website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
+This is a personal portfolio website that showcases my software development credentials, projects, and skills. The website is designed to provide visitors with information about my work, skills, and projects, serving as a professional online presence for potential employers and collaborators.
 
-Things you may want to cover:
+## Features
+- About Me: An introduction to who I am and my background in software development.
 
-* Ruby version
+- Projects: A collection of my most notable projects, complete with descriptions, screenshots, and links to the project repositories.
 
-* System dependencies
+- Skills: An overview of the programming languages, frameworks, and tools I am proficient in.
 
-* Configuration
+- Contact: A way for visitors to get in touch with me for potential collaboration or job opportunities.
 
-* Database creation
+## Built With
+- Ruby on Rails: Backend framework for the website.
 
-* Database initialization
+- HTML and CSS: Frontend design and structure.
 
-* How to run the test suite
+- JavaScript: Enhancing user experience and interactivity.
 
-* Services (job queues, cache servers, search engines, etc.)
+- Bootstrap: Styling and responsive design.
 
-* Deployment instructions
+## Credits
+### Designed with love by Xiaoying Riley for developers
 
-* ...
+## Author
+### Allen Russell
+GitHub: [](https://github.com/garussell)
