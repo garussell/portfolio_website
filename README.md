@@ -26,4 +26,4 @@ This is a personal portfolio website that showcases my software development cred
 
 ## Author
 ### Allen Russell
-GitHub: [](https://github.com/garussell)
+[GitHub:](https://github.com/garussell) - @garussell
