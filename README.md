@@ -22,7 +22,7 @@ This is a personal portfolio website that showcases my software development cred
 - Bootstrap: Styling and responsive design.
 
 ## Credits
-### Designed with love by Xiaoying Riley for developers
+### Used bootstrap template designed by Xiaoying Riley [More Info](https://github.com/xriley/Developer-Theme)
 
 ## Author
 ### Allen Russell
