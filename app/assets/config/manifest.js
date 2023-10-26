@@ -15,5 +15,9 @@
 //= link vanilla-rss/dist/rss.global.min.js
 //= link dark-mode-switch/dark-mode-switch.min.js
 //= link github-calendar/dist/github-calendar.min.js
-//= link github-activity/src/github-activity.js
+//= link github-calendar/dist/github-calendar-responsive.css
 //= link main.js
+
+//= link github-activity/src/github-activity.js
+//= link github-activity/src/github-activity.css
+//= link github-activity/src/github-activity.dark.css
