@@ -13,24 +13,32 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css"> 
 
-    <!-- if using dark theme add this in addition to the main CSS file -->
+    <!-- Dark Mode -->
     <link rel="stylesheet" href="https://unpkg.com/github-activity-feed@latest/dist/github-activity.dark.min.css">
+    <%= javascript_include_tag 'dark-mode-switch/dark-mode-switch.js' %>
+    <%= javascript_include_tag 'dark-mode-switch/dark-mode-switch.min.js' %>
+    <%= stylesheet_link_tag 'dark-mode-switch/dark-mode.css' %>
 
     <!-- FontAwesome JS -->
     <%= javascript_include_tag('js/all.js') %>
-    
-    <!-- Global CSS -->
-    <% stylesheet_link_tag 'styles.css' %>
+
+    <!-- Global JS -->
+    <%= javascript_include_tag 'popper.min.js' %>
     
     <!-- github calendar css -->
     <link rel="stylesheet" href="<%= asset_path('github-calendar/dist/github-calendar-responsive.css') %>">
     <!-- github activity css -->  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
     <link rel="stylesheet" href="<%= asset_path('github-activity/src/github-activity.css') %>">
-    
-    <!-- Vanilla RSS -->
-    <%= javascript_include_tag('vanilla-rss/dist/rss.global.min.js') %>
 
+    <!-- Bootstrap CSS -->
+
+    <%= stylesheet_link_tag 'bootstrap/css/bootstrap.css' %>
+    
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
 </head> 
 
 <body>
@@ -41,14 +49,12 @@
 			    <div class="col">         
 		            <%= image_tag('profile.png', class: 'profile-image img-fluid float-start rounded-circle', alt: 'profile image') %>
 		            <div class="profile-content">
-		                <h1 class="name">Allen Russell</h1>
-		                <h2 class="desc">Software Developer</h2>   
+		                <h1 class="name" style="padding-left: 30px;">Allen Russell</h1>
+		                <h2 class="desc" style="padding-left: 30px;">Software Developer</h2>   
 		                <ul class="social list-inline">
-		                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-		                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-		                    <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>    
-		                    <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>   
-		                    <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>                
+		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/garyallenrusselljr/"><i class="fab fa-linkedin-in"></i></a></li>
+		                    <li class="list-inline-item"><a href="https://github.com/garussell"><i class="fab fa-github-alt"></i></a></li>    
+		                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/21287361/allenrussell"><i class="fab fa-stack-overflow"></i></a></li>                  
 		                </ul> 
 		            </div><!--//profile-->
 			    </div><!--//col-->
@@ -59,7 +65,7 @@
 							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
 						</div>
 			        </div><!--//dark-mode-switch-->
-	                <a class="btn btn-cta-primary" href="https://themes.3rdwavemedia.com/" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>        
+	                <a class="" href="https://www.linkedin.com/in/garyallenrusselljr/overlay/contact-info/" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>        
 	            </div><!--//col-->
 	        </div><!--//row-->         
         </div><!--//container-->
@@ -70,6 +76,7 @@
             <div class="primary col-lg-8 col-12">
                 <section class="about section">
                     <div class="section-inner shadow-sm rounded">
+                        <h1 class="heading">Curiculum Vitae</h1><br />
                         <h2 class="heading">About Me</h2>
                         <div class="content">
                             <p>I'm a Denver-based Software Developer with a passion for music and 15 years of experience in human services, where I helped countless individuals connect to vital resources and improve mental health. This background has given me a unique ability to empathize with others and deliver exceptional customer experiences.</p>
@@ -106,7 +113,7 @@
                                 <div class="desc text-start">                                    
                                     <p>GearUP is a crowdfunding app for artists to request supplies they need. It is a full-stack SOA application that utilizes GraphQL to communicate between the front and back end. The back end also utilizes Sidekiq and Action Mailer to send confirmation and update emails to its users. There is an option to create an account to add a new post, or donors can search and select a project to donate to without having to create an account.</p>
                                 </div><!--//desc-->         
-                                <a class="btn btn-cta-secondary" href="https://github.com/orgs/gearup-2305/repositories" target="_blank"><i class="fas fa-thumbs-up"></i> Checkout on GitHub</a>                 
+                                <a class="col-md-4 col-12" href="https://github.com/orgs/gearup-2305/repositories" target="_blank"><i class="fas fa-thumbs-up"></i> Checkout on GitHub</a>                 
                             </div><!--//item-->
                             <hr class="divider" />
                             <div class="item row">
@@ -157,7 +164,7 @@
                                 <p><a class="more-link" href="https://github.com/garussell/market_money_api_be" target="_blank"><i class="fas fa-external-link-alt"></i>Back-End Repo</a></p>
                             </div><!--//item-->
                             
-                            <a class="btn btn-cta-secondary" href="https://github.com/garussell">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
+                            <a class="col-md-4 col-12" href="https://github.com/garussell">More on GitHub <i class="fas fa-chevron-right pt-1"></i></a>
                             
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -167,7 +174,10 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">GitHub Calendar</h2>
                         <div id="github-graph" class="github-graph">
+                            <a href="https://github.com/garussell" target="_blank">
                             <img src="http://ghchart.rshah.org/garussell" alt="garussell's Github chart" />
+                            </a>
+
                         </div><!--//github-graph-->
                 </section><!--//section-->
                 <br /><br />
@@ -176,58 +186,58 @@
                         <h2 class="heading">Work Experience</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title">Clinical Care Manager - <span class="place"><a href="#">Rocky Mtn Human Services</a></span> <span class="year">(2022 - 2023)</span></h3>
+                                <h3 class="title">Clinical Care Manager - <span class="place"><a href="https://www.rmhumanservices.org/">Rocky Mtn Human Services</a></span> <span class="year">(2022 - 2023)</span></h3>
                                 <li>Contributed to cutting-edge EHR system development through active focus group participation, ensuring timely completion of all admin, management, and user profile checkpoints.</li>
                                 <li>Collaborated effectively within the Forensic Support Team in the Community Transitions program, building strong connections with partners and clients across 16 counties, resulting in improved program transitions and positive outcomes for numerous individuals.</li>
                             </div><!--//item-->
                             <br />
                             <div class="item">
-                                <h3 class="title">Music Teacher - <span class="place"><a href="#">School of Rock</a></span> <span class="year">(2021 - 2022)</span></h3>
+                                <h3 class="title">Music Teacher - <span class="place"><a href="https://www.schoolofrock.com/locations/broomfield">School of Rock</a></span> <span class="year">(2021 - 2022)</span></h3>
                                 <li>Utilized a web-based learning system for efficient lesson organization, enhancing interaction between teachers and students, and improving learning efficiency.</li>
                                 <li>Instructed drums, guitar, and piano for youth and adults, boosting student retention and satisfaction by approximately 25% through personalized instruction and tailored approaches.</li>
                             </div><!--//item-->
                             <br />
                             <div class="item">
-                                <h3 class="title">Music Teacher - <span class="place"><a href="#">Bach to Rock</a></span> <span class="year">(2019 - 2020)</span></h3>
+                                <h3 class="title">Music Teacher - <span class="place"><a href="https://www.bachtorock.com/johnscreek/">Bach to Rock</a></span> <span class="year">(2019 - 2020)</span></h3>
                                 <li>Provided comprehensive instruction in drums, guitar, piano, and vocals, enhancing students’ proficiency across all instruments.</li>
                                 <li>Fostered increased engagement and active participation, resulting in positive feedback from 90%+ of students and families, boosting musical appreciation and confidence.</li>
                             </div><!--//item-->
                             <br />
                             <div class="item">
-                                <h3 class="title">Housing Case Manager - <span class="place"><a href="#">Mental Health Partners</a></span> <span class="year">(2019 - 2020)</span></h3>
+                                <h3 class="title">Housing Case Manager - <span class="place"><a href="https://www.mhpcolorado.org/">Mental Health Partners</a></span> <span class="year">(2019 - 2020)</span></h3>
                                 <li>Provided compassionate counseling and case management to clients with mental/behavioral health challenges, physical disabilities, and housing issues.</li>
                                 <li>Improved clients' mental well-being, facilitated stable housing placements, and connected hundreds to community resources, reducing crisis situations.</li>
                             </div><!--//item-->
                             <br />
                             <div class="item">
-                                <h3 class="title">Care Coordinator - <span class="place"><a href="#">Mental Health Partners</a></span> <span class="year">(2019 - 2020)</span></h3>
+                                <h3 class="title">Care Coordinator - <span class="place"><a href="https://www.mhpcolorado.org/">Mental Health Partners</a></span> <span class="year">(2019 - 2020)</span></h3>
                                 <li>Provided impactful Supportive Counseling, life coaching, and Targeted Case Management services.</li>
                                 <li>Improved clients' emotional well-being and self-awareness.</li>
                                 <li>Enhanced treatment adherence, goal achievement, and sense of community in Health RHYTHMS drum circle.</li>
                             </div><!--//item-->
                             <br />
                             <div class="item">
-                                <h3 class="title">Colorado Peace Officer - <span class="place"><a href="#">Adams County Sheriff's Office</a></span> <span class="year">(2014 - 2018)</span></h3>
+                                <h3 class="title">Colorado Peace Officer - <span class="place"><a href="https://adamssheriff.org/contact-us">Adams County Sheriff's Office</a></span> <span class="year">(2014 - 2018)</span></h3>
                                 <li>Utilized Record and Jail Management Systems, ensuring 100% accuracy in processing and maintaining confidential records by cross-referencing with government databases.</li>
                                 <li>Streamlined administrative procedures as a notary public, reducing processing time and enhancing operational efficiency in the Booking and Releasing Unit handling 100+ cases daily.</li>
                             </div><!--//item-->
                             <br />
                             <div class="item">
-                                <h3 class="title">Care Coordinator - <span class="place"><a href="#">CODAC Behavioral Health Services</a></span> <span class="year">(2013 - 2014)</span></h3>
+                                <h3 class="title">Care Coordinator - <span class="place"><a href="https://www.codac.org/services/mental-behavioral-health/">CODAC Behavioral Health Services</a></span> <span class="year">(2013 - 2014)</span></h3>
                                 <li>Provided vocational training and group mentoring to youth offenders in a group-home setting.</li>
                                 <li>Achieved significant improvement in vocational skills and job readiness, assessed through performance evaluations.</li>
                                 <li>Noted an increase in participants' self-confidence and motivation for personal and professional growth, based on pre-and post-program surveys.</li>
                             </div><!--//item-->
                             <br />
                             <div class="item">
-                                <h3 class="title">Vocational Counselor - <span class="place"><a href="#">Devereux Advanced Behavioral Health</a></span> <span class="year">(2011 - 2012)</span></h3>
+                                <h3 class="title">Vocational Counselor - <span class="place"><a href="https://www.devereux.org/site/SPageServer/?pagename=news">Devereux Advanced Behavioral Health</a></span> <span class="year">(2011 - 2012)</span></h3>
                                 <li>Provided vocational training and group mentoring to youth offenders in a group-home setting.</li>
                                 <li>Achieved significant improvement in vocational skills and job readiness, assessed through performance evaluations.</li>
                                 <li>Noted an increase in participants' self-confidence and motivation for personal and professional growth, based on pre-and post-program surveys.</li>
                             </div><!--//item-->
                             <br />
                             <div class="item">
-                                <h3 class="title">Mental Health Worker - <span class="place"><a href="#">Devereux Advanced Behavioral Health</a></span> <span class="year">(2010 - 2011)</span></h3>
+                                <h3 class="title">Mental Health Worker - <span class="place"><a href="https://www.devereux.org/site/SPageServer/?pagename=news">Devereux Advanced Behavioral Health</a></span> <span class="year">(2010 - 2011)</span></h3>
                                 <li>Employed evidence-based practices to counsel and monitor youth in a residential treatment facility.</li>
                                 <li>Improved class participation, behavior expectations, and advocacy for individual differences, enhancing residential morale.</li>
                             </div><!--//item-->
@@ -252,13 +262,13 @@
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Denver, Colorado</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">allenrusselldev@gmail.com</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.linkedin.com/in/garyallenrusselljr/</a></li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:allenrusselldev@gmail.com">allenrusselldev@gmail.com</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://www.linkedin.com/in/garyallenrusselljr/">LinkedIn</a></li>
                             </ul>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </aside><!--//aside-->
-                
+                <br />
                 <aside class="skills aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Skills</h2>
@@ -269,34 +279,34 @@
                             <div class="skillset">
                                
                                 <div class="item">
-                                    <h3 class="level-title">Ruby &amp; Rails<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="This is my primary OOP language and gateway to quickly learning new language(s) such as Python and Java"><i class="fas fa-info-circle"></i>Proficient</span></h3>
+                                    <h3 class="level-title">Ruby &amp; Ruby on Rails   <span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="This is my primary OOP language and gateway to quickly learning new language(s) such as Python and Java"><i class="fas fa-info-circle"></i>  Proficient</span></h3>
 
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 92%" aria-valuenow="96"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div><!--//level-bar-->                               
                                 </div><!--//item-->
-                                
+                                <br />
                                 <div class="item">
-                                    <h3 class="level-title">PostgreSQL &amp; ActiveRecord<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Adaptale to any SQL database and adept at ActiveRecord queries within Ruby on Rails"><i class="fas fa-info-circle"></i>Proficient</span></h3>
+                                    <h3 class="level-title">PostgreSQL &amp; ActiveRecord   <span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Adaptale to any SQL database and adept at ActiveRecord queries within Ruby on Rails"><i class="fas fa-info-circle"></i>  Proficient</span></h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 80%" aria-valuenow="94"  aria-valuemin="0" aria-valuemax="94"></div>
 									</div><!--//level-bar-->                                   
                                 </div><!--//item-->
-
+                                <br />
                                 <div class="item">
-                                    <h3 class="level-title">JavaScript<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Most of my experience is with vanilla JS, and recent learning includes React"><i class="fas fa-info-circle"></i>Apprentice</span></h3>
+                                    <h3 class="level-title">JavaScript   <span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Most of my experience is with vanilla JS, and recent learning includes React"><i class="fas fa-info-circle"></i>  Apprentice</span></h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 75%" aria-valuenow="86"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div><!--//level-bar-->                                  
                                 </div><!--//item-->
-
+                                <br />
                                 <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3 &amp; Bootstrap<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="HTML and CSS were the first language I learned and I'm able to bootstrap effectively (such as with this website)"><i class="fas fa-info-circle"></i>Proficient</span></h3>
+                                    <h3 class="level-title">HTML5, CSS3 &amp; Bootstrap   <span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="HTML and CSS were the first language I learned and I'm able to bootstrap effectively (such as with this website)"><i class="fas fa-info-circle"></i>  Proficient</span></h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 75%" aria-valuenow="93"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div><!--//level-bar-->                                  
                                 </div><!--//item-->
-                                
+                                <br />
                                 <div class="item">
 
                                     <h3 class="level-title">Exposure </h3>
@@ -324,14 +334,14 @@
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </aside><!--//section-->
-                
+                <br />
                 <aside class="testimonials aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Testimonials</h2>
                         <div class="content">
                             <div class="item">
                                 <blockquote class="quote">                                  
-                                    <p><i class="fas fa-quote-left"></i>Allen is dedicated, patient, and thorough.  He is a team player and you can rely on him to carry the weight!</p>
+                                    <p><i class="fas fa-quote-left"></i>Allen is dedicated, patient, and thorough.  He is a team player and you can rely on him to be prepared and productive!</p>
                                 </blockquote>                
                                 <p class="source"><span class="name">Anon</span><br /><span class="title"></span></p>                                                             
                             </div><!--//item-->
@@ -341,7 +351,7 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
-                
+                <br />
                 <aside class="education aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Education</h2>
@@ -361,7 +371,7 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
-                            
+                <br />
                 <aside class="languages aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Languages</h2>
@@ -379,16 +389,18 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
-                
+                <br />
                 <aside class="blog aside section">
-                    <div class="section-inner shadow-sm rounded">
+                    <div class="section-inner shadow-sm rounded" style="display: flex; flex-direction: column;">
                         <h2 class="heading">Medium Blog Posts</h2>
-                        <div id="rss-feeds" class="content">
-                            
-                        </div><!--//content-->
+                        <a href="https://medium.com/@allenrusselldev">
+                        <%= image_tag('medium-article.png', alt: 'medium-image', width: '350') %>
+                        </a>
+
+                        <a href="https://medium.com/@allenrusselldev" target="_blank">Follow me on Medium</a></p>
                     </div><!--//section-inner-->
                 </aside><!--//section-->
-                
+                <br />
                 <aside class="list music aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Coding Music</h2>
@@ -418,7 +430,7 @@
                 </aside><!--//section--> 
 <%
 =end%>
-            
+                <br />
                 <aside class="credits aside section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Credits</h2>
@@ -426,12 +438,8 @@
                             <ul class="list-unstyled pb-2">
                                 <li><a href="https://getbootstrap.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap</a></li>
                                 <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fas fa-external-link-alt"></i>FontAwesome</a></li>
-                                <li><a href="https://github.com/IonicaBizau/github-calendar" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Calendar Plugin</a></li>
-                                
-                                <li><a href="https://caseyscarborough.com/projects/github-activity/" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Activity Stream</a></li>
-                                
-                                <li><a href="https://github.com/sdepold/vanilla-rss" target="_blank"><i class="fas fa-external-link-alt"></i>Vanilla RSS</a></li>
                                 <li><a href="https://github.com/coliff/dark-mode-switch"><i class="fas fa-external-link-alt"></i>Dark Mode Switch</a></li>
+                                <li><a href="https://rubyonrails.org/" target="_blank"><i class="fas fa-external-link-alt"></i>Ruby on Rails</a></li>
                                 
                             </ul>
                             
@@ -454,17 +462,7 @@
     </footer><!--//footer-->
  
     <!-- Javascript -->          
-    <%= javascript_include_tag 'popper.min', 'bootstrap/js/bootstrap.min', 'vanilla-rss/dist/rss.global.min', 'dark-mode-switch/dark-mode-switch.min' %>
-
-    <!-- github calendar plugin -->
-    <<%= javascript_include_tag 'github-calendar/dist/github-calendar.min' %>
-
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <%= javascript_include_tag 'github-activity/src/github-activity' %>
-
-    <!-- custom js -->
-    <%= javascript_include_tag 'main' %>
+    <%= javascript_include_tag 'popper.min', 'bootstrap/js/bootstrap.min', 'dark-mode-switch/dark-mode-switch.min' %>
           
 </body>
 </html> 
