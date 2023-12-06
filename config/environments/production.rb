@@ -30,7 +30,7 @@ Rails.application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
   config.assets.precompile += %w( js/all.js )
-  config.assets.precompile += %w( github-calendar/dist/github-calendar-responsive.css )
+
   config.assets.precompile += %w( bootstrap/css/bootstrap.css )
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
