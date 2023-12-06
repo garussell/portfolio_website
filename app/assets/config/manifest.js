@@ -57,8 +57,8 @@
 //= link bootstrap/js/bootstrap.bundle.min.js
 
 
-//= link dark-mode-switch/dark-mode-switch.min.js
 //= link dark-mode-switch/dark-mode-switch.js
+//= link dark-mode-switch/dark-mode-switch.min.js
 //= link dark-mode-switch/dark-mode.css
 
 //= link fontawesome/css/all.css
