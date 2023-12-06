@@ -6,7 +6,7 @@
 //= link application.js
 //= link styles.css
 
-//= link js/all.js
+//= link all.js
 //= link popper.min.js
 
 //= link bootstrap/css/bootstrap-grid.css
