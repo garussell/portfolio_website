@@ -2,10 +2,10 @@
   "version": 2,
   "builds": [
     { "src": "**/*.rb", "use": "@vercel/ruby" },
-    { "src": "app/javascript/controllers/*.js", "use": "@now/node" },
-    { "src": "app/assets/javascripts/**/*.js", "use": "@now/node" },
-    { "src": "app/assets/stylesheets/**/*.scss", "use": "@now/node" },
-    { "src": "app/assets/stylesheets/**/*.css", "use": "@now/node" }
+    { "src": "app/javascript/controllers/*.js", "use": "@vercel/node" },
+    { "src": "app/assets/javascripts/**/*.js", "use": "@vercel/node" },
+    { "src": "app/assets/stylesheets/**/*.scss", "use": "@vercel/node" },
+    { "src": "app/assets/stylesheets/**/*.css", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/routes.rb", "dest": "/routes.rb" },
