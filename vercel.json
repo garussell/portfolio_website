@@ -1,7 +1,7 @@
 {
   "version": 2,
   "builds": [
-    { "src": "**/*.rb", "use": "@now/ruby" },
+    { "src": "**/*.rb", "use": "@vercel/ruby" },
     { "src": "app/javascript/controllers/*.js", "use": "@now/node" },
     { "src": "app/assets/javascripts/**/*.js", "use": "@now/node" },
     { "src": "app/assets/stylesheets/**/*.scss", "use": "@now/node" },
