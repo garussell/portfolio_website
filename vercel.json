@@ -8,7 +8,7 @@
     { "src": "app/assets/stylesheets/**/*.css", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/routes.rb", "dest": "/routes.rb" },
+    { "src": "/allenr", "dest": "/$1" },
     { "src": "/.env", "dest": "/.env" },
     { "src": "/.*", "dest": "/app/views/layouts/application.html.erb" },
     { "src": "/app/assets/config/(.*)", "dest": "/app/assets/config/$1" },
