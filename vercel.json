@@ -1,22 +1,21 @@
 {
   "version": 2,
-  "builds": [{ "src": "**/*.rb", "use": "@now/ruby" }],
+  "builds": [
+    { "src": "**/*.rb", "use": "@now/ruby" },
+    { "src": "app/javascript/controllers/**/*.js", "use": "@now/node" },
+    { "src": "app/assets/javascripts/**/*.js", "use": "@now/node" },
+    { "src": "app/assets/stylesheets/**/*.scss", "use": "@now/node" },
+    { "src": "app/assets/stylesheets/**/*.css", "use": "@now/node" }
+  ],
   "routes": [
-    { "src": "/.*", "dest": "/routes.rb" },
-    { "src": "/.*", "dest": "/Gemfile" },
-    { "src": "/.*", "dest": "/Gemfile.lock" },
-    { "src": "/.*", "dest": "/.env" },
-    { "src": "app/javascript/controllers/**/*.js" },
-    { "src": "app/views/**/*.erb" },
-    { "src": "app/assets/stylesheets/**/*.scss" },
-    { "src": "app/assets/stylesheets/**/*.css" },
-    { "src": "app/assets/images/**/*.png" },
-    { "src": "app/assets/javascripts/**/*.js" },
-    
+    { "src": "/routes.rb", "dest": "/routes.rb" },
+    { "src": "/Gemfile", "dest": "/Gemfile" },
+    { "src": "/Gemfile.lock", "dest": "/Gemfile.lock" },
+    { "src": "/.env", "dest": "/.env" },
     { "src": "/.*", "dest": "/app/views/layouts/application.html.erb" },
-    { "src": "app/assets/config/*.js"}, 
-    { "src": "app/assets/images/*.png"},
-    { "src": "app/assets/javascripts/*.js"},
-    { "src": "app/assets/css/*.css"}
+    { "src": "/app/assets/config/(.*)", "dest": "/app/assets/config/$1" },
+    { "src": "/app/assets/images/(.*)", "dest": "/app/assets/images/$1" },
+    { "src": "/app/assets/javascripts/(.*)", "dest": "/app/assets/javascripts/$1" },
+    { "src": "/app/assets/css/(.*)", "dest": "/app/assets/css/$1" }
   ]
 }
