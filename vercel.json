@@ -9,8 +9,6 @@
   ],
   "routes": [
     { "src": "/routes.rb", "dest": "/routes.rb" },
-    { "src": "/Gemfile", "dest": "/Gemfile" },
-    { "src": "/Gemfile.lock", "dest": "/Gemfile.lock" },
     { "src": "/.env", "dest": "/.env" },
     { "src": "/.*", "dest": "/app/views/layouts/application.html.erb" },
     { "src": "/app/assets/config/(.*)", "dest": "/app/assets/config/$1" },
