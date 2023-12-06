@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "builds": [{ "src": "**/*.rb", "use": "@now/ruby" }],
   "routes": [
     { "src": "/.*", "dest": "/routes.rb" },
