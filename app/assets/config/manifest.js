@@ -4,6 +4,7 @@
 // = link_tree ../../../vendor/javascript .js
 
 //= link application.js
+//= link styles.css
 
 //= link js/all.js
 //= link popper.min.js
@@ -59,5 +60,35 @@
 //= link dark-mode-switch/dark-mode-switch.min.js
 //= link dark-mode-switch/dark-mode-switch.js
 //= link dark-mode-switch/dark-mode.css
+
+//= link fontawesome/css/all.css
+//= link fontawesome/css/all.css.map
+//= link fontawesome/css/all.min.css
+//= link fontawesome/css/all.min.css.map
+//= link fontawesome/css/brands.css
+//= link fontawesome/css/brands.css.map
+//= link fontawesome/css/brands.min.css
+//= link fontawesome/css/brands.min.css.map
+//= link fontawesome/css/fontawesome.css
+//= link fontawesome/css/fontawesome.css.map
+//= link fontawesome/css/fontawesome.min.css
+//= link fontawesome/css/fontawesome.min.css.map
+//= link fontawesome/css/regular.css
+//= link fontawesome/css/regular.css.map
+//= link fontawesome/css/regular.min.css  
+//= link fontawesome/css/regular.min.css.map
+//= link fontawesome/css/solid.css
+//= link fontawesome/css/solid.css.map
+//= link fontawesome/css/solid.min.css
+//= link fontawesome/css/solid.min.css.map
+//= link fontawesome/css/svg-with-js.css
+//= link fontawesome/css/svg-with-js.css.map
+//= link fontawesome/css/svg-with-js.min.css
+//= link fontawesome/css/svg-with-js.min.css.map
+//= link fontawesome/css/v4-shims.css
+//= link fontawesome/css/v4-shims.css.map
+//= link fontawesome/css/v4-shims.min.css
+//= link fontawesome/css/v4-shims.min.css.map
+
 
 
