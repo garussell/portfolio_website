@@ -57,38 +57,34 @@
 //= link bootstrap/js/bootstrap.bundle.min.js
 
 
-//= link dark-mode-switch/dark-mode-switch.min.js
-//= link dark-mode-switch/dark-mode-switch.js
-//= link dark-mode-switch/dark-mode.css
-
-//= link fontawesome/css/all.css
-//= link fontawesome/css/all.css.map
-//= link fontawesome/css/all.min.css
-//= link fontawesome/css/all.min.css.map
-//= link fontawesome/css/brands.css
-//= link fontawesome/css/brands.css.map
-//= link fontawesome/css/brands.min.css
-//= link fontawesome/css/brands.min.css.map
-//= link fontawesome/css/fontawesome.css
-//= link fontawesome/css/fontawesome.css.map
-//= link fontawesome/css/fontawesome.min.css
-//= link fontawesome/css/fontawesome.min.css.map
-//= link fontawesome/css/regular.css
-//= link fontawesome/css/regular.css.map
-//= link fontawesome/css/regular.min.css  
-//= link fontawesome/css/regular.min.css.map
-//= link fontawesome/css/solid.css
-//= link fontawesome/css/solid.css.map
-//= link fontawesome/css/solid.min.css
-//= link fontawesome/css/solid.min.css.map
-//= link fontawesome/css/svg-with-js.css
-//= link fontawesome/css/svg-with-js.css.map
-//= link fontawesome/css/svg-with-js.min.css
-//= link fontawesome/css/svg-with-js.min.css.map
-//= link fontawesome/css/v4-shims.css
-//= link fontawesome/css/v4-shims.css.map
-//= link fontawesome/css/v4-shims.min.css
-//= link fontawesome/css/v4-shims.min.css.map
+//= link css/all.css
+//= link css/all.css.map
+//= link css/all.min.css
+//= link css/all.min.css.map
+//= link css/brands.css
+//= link css/brands.css.map
+//= link css/brands.min.css
+//= link css/brands.min.css.map
+//= link css/fontawesome.css
+//= link css/fontawesome.css.map
+//= link css/fontawesome.min.css
+//= link css/fontawesome.min.css.map
+//= link css/regular.css
+//= link css/regular.css.map
+//= link css/regular.min.css  
+//= link css/regular.min.css.map
+//= link css/solid.css
+//= link css/solid.css.map
+//= link css/solid.min.css
+//= link css/solid.min.css.map
+//= link css/svg-with-js.css
+//= link css/svg-with-js.css.map
+//= link css/svg-with-js.min.css
+//= link css/svg-with-js.min.css.map
+//= link css/v4-shims.css
+//= link css/v4-shims.css.map
+//= link css/v4-shims.min.css
+//= link css/v4-shims.min.css.map
 
 
 
