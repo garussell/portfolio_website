@@ -5,7 +5,7 @@
 
 //= link application.js
 //= link styles.css
-
+//= link custom.css
 //= link js/all.js
 //= link popper.min.js
 
