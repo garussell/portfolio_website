@@ -21,42 +21,7 @@
     />
     <!-- Custom stylesheets -->
     <%= stylesheet_link_tag 'styles.css' %> 
-    <style>
-        .exposure-container {
-            display: flex;
-        }
-
-        .column {
-            flex: 1;
-            margin-right: 20px;
-        }
-
-        .exposure-list {
-            margin-bottom: 20px;
-            padding: 0;
-            column-count: 2;
-        }
-
-        .exposure-list li {
-            list-style: none;
-            margin-bottom: 10px;
-            break-inside: avoid;
-        }
-        .github-graph {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .medium-article {
-            display: flex;
-            flex-direction: column;
-            align-self: center;
-        }
-
-        .item li {
-            list-style: circle;
-        }
-    </style>
+    <%= stylesheet_link_tag 'custom.css' %>
 </head> 
 
 <body>
@@ -68,12 +33,16 @@
 		            <%= image_tag('profile.png', class: 'profile-image img-fluid float-start rounded-circle', alt: 'profile image') %>
 		            <div class="profile-content">
 		                <h1 class="name" style="padding-left: 30px;">Allen Russell</h1>
-		                <h2 class="desc" style="padding-left: 30px;">Software Developer</h2>   
+		                <h1 class="desc" style="padding-left: 30px;">Software Developer</h1>   
 		                <ul class="social list-inline">
 		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/garyallenrusselljr/"><i class="fab fa-linkedin-in"></i></a></li>
-		                    <li class="list-inline-item"><a href="https://github.com/garussell"><i class="fab fa-github-alt"></i></a></li>    
+		                    <li class="list-inline-item"><a href="https://github.com/garussell"><i class="fab fa-github-alt"></i></a></li> 
+
+		                    <li class="list-inline-item"><a href="https://terminal.turing.edu/profiles/1977"><img src="https://terminal.turing.edu/assets/turing_logo_gray-2bc6bdc736890907f536f2d188d7d20ffe8e8b28764bdc724867dcfb78cd1b77.png" alt="Turing Logo" style="width: 34px; height: 34px; background-color: 'current color'; margin-bottom: 7px"></a></li> 
+
 		                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/21287361/allenrussell"><i class="fab fa-stack-overflow"></i></a></li>                  
-		                    <li class="list-inline-item"><a href="https://terminal.turing.edu/profiles/1977"><i class="fab fa-think-peaks"></i></a></li> 
+		                    <li class="list-inline-item"><a href="https://medium.com/@allenrusselldev"><i class="fab fa-medium"></i></a></li> 
+
 
     
                         </ul> 
@@ -143,10 +112,11 @@
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://next-steps-xu92.onrender.com/" target="_blank">Next Steps</a></h3>
-                                    <p class="mb-2">Next Steps is an idea that I pitched for Consultancy, inspired by my previous professional experience. It is a full-stack group project that leverages the 211 API along with geolocation to assist individuals in finding community resources in their vicinity. We thought it was particularly important to create search options catered to persons who may not have the ability to navigate existing resources. This repository contains the front-end portion of the project which utilizes the API provided by the back-end repository.</p>
+                                    <p class="mb-2">Next Steps is an idea that I pitched for a Consultancy project in Turing, inspired by my previous professional experience. It is a full-stack group project that leverages the 211 API along with geolocation to assist individuals in finding community resources in their vicinity. We thought it was particularly important to create search options catered to persons who may not have the ability to navigate existing resources. This repository contains the front-end portion of the project which utilizes the API provided by the back-end repository.</p>
                                     <p><a class="more-link" href="https://github.com/garussell/next-steps" target="_blank"><i class="fas fa-external-link-alt"></i>Checkout on GitHub</a></p>
                                 </div><!--//desc-->                          
                             </div><!--//item-->
+                            
                             <br />
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://github.com/garussell/whether_sweater" target="_blank">
@@ -505,7 +475,6 @@
     <!-- ******FOOTER****** --> 
     <footer class="footer">
         <div class="container text-center">
-                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
                 <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
         </div><!--//container-->
     </footer><!--//footer-->
