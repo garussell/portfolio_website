@@ -9,6 +9,8 @@
 //= link js/all.js
 //= link popper.min.js
 
+//= link dark-mode-switch/dark-mode-switch.min.js
+
 //= link css/all.css
 //= link css/all.css.map
 //= link css/all.min.css
