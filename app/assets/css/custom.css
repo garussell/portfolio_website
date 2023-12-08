@@ -30,3 +30,13 @@
 .item li {
   list-style: circle;
 }
+
+.project-type {
+  background: #3a6caa;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
