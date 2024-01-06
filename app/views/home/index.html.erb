@@ -69,10 +69,10 @@
                         <h1 class="heading">Curiculum Vitae</h1><br />
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>I'm a Denver-based Software Developer with 15 years of human services experience, focusing on connecting individuals to vital resources and improving mental health. My public service social work background has instilled empathy and a commitment to exceptional customer experiences.</p>
-                            <p>Now in my late 30s, I've transitioned dramatically into technology and engineering, bringing a wealth of stories and a passion for building. I leverage my skills in listening to people's stories to resolve issues using high-tech web solutions.</p>
+                            <p>I'm a Denver-based Software Developer with over a decade of human services mid-level management experience, focusing on connecting individuals to vital resources and improving mental health. My public service social work background has instilled empathy and a commitment to human-centered approaches.</p>
+                            <p>Now in my late 30s, I've transitioned into technology and engineering, bringing a wealth of knowledge and a passion for building. I leverage my skills in listening to people's stories to resolve issues using high-tech web solutions.</p>
                             <p><strong>Tech Transition</strong></p>
-                            <p>My tech transition is owed to the supportive Turing community and ongoing training from platforms like codeacademy.com, LinkedIn, and meetups. While Ruby holds a special place in my heart, I've explored Python, and Java (rebuilding "Battleship"), dabbled in C#, and gained intros to GoLang and Objective C. Recently, my focus has shifted to React.</p>
+                            <p>My tech transition is owed to the supportive Turing community and ongoing training from platforms like codeacademy.com, LinkedIn, and meetups. While Ruby holds a special place in my heart, I've explored Python, and Java (rebuilding "Battleship"), dabbled in C#, and gained intros to GoLang and Objective C. Recently, my focus has shifted to React and Next as I strive to match my front-end skills with back-end.</p>
                             <p>I excel in building fast back-ends pulling data from microservices, serving clean JSON structures to the front end with user authentication best practices, and data from PostgreSQL models. After months in vanilla JavaScript, I have embraced frameworks, and I follow Test-Driven Development (TDD) and Agile patterns in solo and group projects.</p>
                             <p>In my development work with Ruby on Rails, I rely on tools like VCR/Webmock, shoulda-matchers, jsonapi-serializer, factorybot/faker, launchy, orderly, pry, as well as rubocop and codeclimate, to boost productivity and maintain high coding standards.</p>
                             <p><strong>Learning Path</strong></p>
@@ -87,17 +87,31 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Latest Projects</h2>
                         <div class="content">    
-                                               
+                            <div class="item row">
+                                
+                                <div class="featured-image has-ribbon">
+                                    <a href="https://www.loom.com/share/2a21a2152b024118bf7d3df30188410d" target="_blank">
+                                    <%= image_tag('projects/artist-assist.png', class: 'img-fluid project-image rounded shadow-sm', alt: 'project name') %>
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">New</div>
+                                    </div>
+                                </div>
+                                
+                                <h2 class="title mb-3"><a href="https://www.loom.com/share/2a21a2152b024118bf7d3df30188410d" target="_blank">AiArtistAssist </a><span class="badge badge-theme">Full Stack </span> <span class="badge project-type">Solo Project</span></h2>
+                                    
+                                <div class="desc text-start">                                    
+                                    <p>AiArtistAssist uses OpenAI API to create images and provides action steps and resources to help artists with their ideas. It uses Rails ActiveStorage for file uploads and primarily focuses on fine-tuning AI responses.</p>
+                                </div><!--//desc-->         
+                                <a class="more-link" href="https://github.com/garussell/aiArtistAssist" target="_blank"><i class="fas fa-external-link-alt"></i> Checkout on GitHub</a>                 
+                            </div><!--//item-->                   
                             <div class="item row">
                                 
                                 <div class="featured-image has-ribbon">
                                     <a href="https://gear-up-ui-ux.vercel.app/" target="_blank">
                                     <%= image_tag('projects/gear-up.png', class: 'img-fluid project-image rounded shadow-sm', alt: 'project name') %>
-
                                     </a>
-                                    <div class="ribbon">
-                                        <div class="text">New</div>
-                                    </div>
+                                
                                 </div>
                                 
                                 <h2 class="title mb-3"><a href="https://gear-up-ui-ux.vercel.app/" target="_blank">Gear Up </a><span class="badge badge-theme">Full Stack </span> <span class="badge project-type">Group Project</span></h2>
