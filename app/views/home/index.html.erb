@@ -32,8 +32,8 @@
 			    <div class="col">         
 		            <%= image_tag('profile.png', class: 'profile-image img-fluid float-start rounded-circle', alt: 'profile image') %>
 		            <div class="profile-content">
-		                <h1 class="name" style="padding-left: 30px;">Allen Russell</h1>
-		                <h1 class="desc" style="padding-left: 30px;">Software Developer</h1>   
+		                <h1 class="name" style="padding-left: 30px;">Gary Allen Russell Jr - "Allen"</h1>
+		                <h1 class="desc" style="padding-left: 30px;">Software Developer | Human-Centered | Drummer</h1>   
 		                <ul class="social list-inline">
 		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/garyallenrusselljr/"><i class="fab fa-linkedin-in"></i></a></li>
 		                    <li class="list-inline-item"><a href="https://github.com/garussell"><i class="fab fa-github-alt"></i></a></li> 
@@ -66,18 +66,21 @@
             <div class="primary col-lg-8 col-12">
                 <section class="about section">
                     <div class="section-inner shadow-sm rounded">
-                        <h1 class="heading">Curiculum Vitae</h1><br />
+                        <h1 class="heading">Curriculum Vitae</h1><br />
                         <h2 class="heading">About Me</h2>
                         <div class="content">
                             <p>I'm a Denver-based Software Developer with over a decade of human services mid-level management experience, focusing on connecting individuals to vital resources and improving mental health. My public service social work background has instilled empathy and a commitment to human-centered approaches.</p>
                             <p>Now in my late 30s, I've transitioned into technology and engineering, bringing a wealth of knowledge and a passion for building. I leverage my skills in listening to people's stories to resolve issues using high-tech web solutions.</p>
                             <p><strong>Tech Transition</strong></p>
-                            <p>My tech transition is owed to the supportive Turing community and ongoing training from platforms like codeacademy.com, LinkedIn, and meetups. While Ruby holds a special place in my heart, I've explored Python, and Java (rebuilding "Battleship"), dabbled in C#, and gained intros to GoLang and Objective C. Recently, my focus has shifted to React and Next as I strive to match my front-end skills with back-end.</p>
-                            <p>I excel in building fast back-ends pulling data from microservices, serving clean JSON structures to the front end with user authentication best practices, and data from PostgreSQL models. After months in vanilla JavaScript, I have embraced frameworks, and I follow Test-Driven Development (TDD) and Agile patterns in solo and group projects.</p>
-                            <p>In my development work with Ruby on Rails, I rely on tools like VCR/Webmock, shoulda-matchers, jsonapi-serializer, factorybot/faker, launchy, orderly, pry, as well as rubocop and codeclimate, to boost productivity and maintain high coding standards.</p>
+                            <p>My tech transition is owed to the supportive Turing community and ongoing training from platforms like The Cloud Bootcamp LLC, CodeAcademy.com, LinkedIn, and gaining inspiration from meetups. While Ruby and Ruby on Rails hold a special place in my heart, I've explored Python, and Java (rebuilding "Battleship"), dabbled in C# via Turing's "Launch" curriculum, and also a collaborative project that used GoLang. To match my front-end skills with my back-end, I have shifted my focus to React after months of vanilla JavaScript.</p>
+                            <p>I excel in building fast back-ends pulling data from microservices, serving clean JSON structures to the front end with user authentication best practices, and data from PostgreSQL models. I follow Test-Driven Development (TDD), having robust test suites in my applications in addition to load testing with Locust, and using Postman to test API requests and validate them with assertions.  I alsu adhere to principles of Behavior Driven Development when "dream driving", particularly on the front-end</p>
+                            <p><strong>Tools & Processes</strong></p>
+                            <p>My development process includes using Git for version control, and GitHub for collaboration. I have experience with Agile methodologies, and I'm comfortable with pair programming as well as working in a remote environment. I'm familiar with CD/CI, having used CircleCI, GitHub Actions, and Heroku, and I'm familiar with Docker and Kubernetes. My expertise includes managing deployments with Terraform to orchestrate Kubernetes clusters across multiple cloud platforms, including AWS and Google Cloud.</p>
+                            <p>I have primarily used a RESTful API design and implementation, but I have one project with GraphQL and am familiar with WebSockets. I have focused a great deal on accessibility and user authentication, having experience with Auth0 by Okta, Google OAuth, and JSON Web Tokens (JWT). I use Redis and Sidekiq for background jobs, and I'm becoming increasingly familiar with AI and machine learning, having used OpenAI API and TensorFlow. I completed an Udemy course on CyberSecurity and Networking, and I'm familiar with Quality Assurance as well.</p>
+                            <p>In my development work with Ruby on Rails, I rely on gems like VCR/Webmock, shoulda-matchers, jsonapi-serializer, factorybot/faker, launchy, orderly, pry, as well as rubocop and codeclimate, to boost productivity and maintain high coding standards.  I have also successfully implemented ActionMailer, ActiveStorage, well versed in ActiveRecord, ActiveJob, ActionCable, and utilizing gems for Tailwind and Bootstrap, as well as importing JavaScript libraries such as Leaflet.</p>
                             <p><strong>Learning Path</strong></p>
-                            <p>Currently, I'm delving into compiled languages and Docker for containerization, aiming to create scalable applications. Actively using documentation and videos, I'm enhancing my skills in cloud services like Google Cloud, AWS, and Azure.</p>
-                            <p>I am a dedicated team player, eager to embrace challenges. My professional experiences, coupled with my technical skills, equips me to tackle complex problems and deliver innovative solutions. I feel like my tech journey is just beginning, and I'm excited about what lies ahead.</p>
+                            <p>Currently, I'm leaning hard toward DevOps to close the knowledge gap between myself and opportunities within Cloud Development using Google Cloud, AWS, and Azure, with automation via Terraform.  I believe this sets me apart as Cloud Computing is quickly becoming the industry standard.  I am also enrolled in "pre-enrollment" courses through CU Boulder, which include "Fundamentals of Software Architecture for Big Data," "Software Architecture Patterns for Big Data", and "Applications of Software Architecture for Big Data" as prerequisites for the MS-CS degree.</p>
+                            <p>I am dedicated to my goal of becoming a Senior Developer.  I am human-centered, a proven team player, and eager to embrace challenges. My professional experiences, coupled with my technical skills, equip me to tackle complex problems and deliver innovative solutions. I feel like my tech journey is just beginning.  I am humbled, and I'm excited about what lies ahead.</p>
                          
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
@@ -86,16 +89,46 @@
                <section class="latest section">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Latest Projects</h2>
-                        <div class="content">    
+                        <div class="content"> 
+                            <div class="item row">
+                                    
+                                    <div class="featured-image has-ribbon">
+                                        <a href="https://github.com/garussell/PresentMind" target="_blank">
+                                        <%= image_tag('projects/present-mind-schema.png', class: 'img-fluid project-image rounded shadow-sm', alt: 'project name') %>
+                                        </a>
+                                        <div class="ribbon">
+                                            <div class="text">New</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <h2 class="title mb-3"><a href="https://github.com/garussell/PresentMind" target="_blank">PresentMind </a><span class="badge badge-theme">API </span> <span class="badge project-type">Solo Project</span></h2>
+                                        
+                                    <div class="desc text-start">                                    
+                                        <p>PresentMind the back-end API for a health and therapy tracking application that uses Auth0 and has therapist and patient profiles. The back-end uses PostgreSQL, and Rails, exposing endpoints with consumed data from several health related APIs. A robust design with 11 tables and data is analyzed for patterns, correlations between mood and behaviors.</p>
+                                    </div><!--//desc-->         
+                                    <a class="more-link" href="https://github.com/garussell/PresentMind" target="_blank"><i class="fas fa-external-link-alt"></i> Checkout on GitHub</a>                 
+                                </div><!--//item-->    
+                            <div class="item row">
+                                    
+                                    <div class="featured-image has-ribbon">
+                                        <a href="https://www.loom.com/share/abffe1ccf504409a8d1cb5345753eb7f" target="_blank">
+                                        <%= image_tag('projects/unspin-mail.png', class: 'img-fluid project-image rounded shadow-sm', alt: 'project name') %>
+                                        </a>
+                                    </div>
+                                    
+                                    <h2 class="title mb-3"><a href="https://www.loom.com/share/abffe1ccf504409a8d1cb5345753eb7f" target="_blank">UnSpin News Mailer</a><span class="badge badge-theme">Full Stack </span> <span class="badge project-type">Solo Project</span></h2>
+                                        
+                                    <div class="desc text-start">                                    
+                                        <p>This project uses ActionMailer with NewsApi to create a straight forward mailer. There is one API call per day which is written to a Redis cache, and each subscriber receive's a daily news brief based on their selected categories via scheduled Job and emailed per Sidekiq, as long as they are 'confirmed'.</p>
+                                    </div><!--//desc-->         
+                                    <a class="more-link" href="https://github.com/garussell/subscription_news_mailer" target="_blank"><i class="fas fa-external-link-alt"></i> Checkout on GitHub</a>                 
+                                </div><!--//item--> 
                             <div class="item row">
                                 
                                 <div class="featured-image has-ribbon">
                                     <a href="https://www.loom.com/share/2a21a2152b024118bf7d3df30188410d" target="_blank">
                                     <%= image_tag('projects/artist-assist.png', class: 'img-fluid project-image rounded shadow-sm', alt: 'project name') %>
                                     </a>
-                                    <div class="ribbon">
-                                        <div class="text">New</div>
-                                    </div>
                                 </div>
                                 
                                 <h2 class="title mb-3"><a href="https://www.loom.com/share/2a21a2152b024118bf7d3df30188410d" target="_blank">AiArtistAssist </a><span class="badge badge-theme">Full Stack </span> <span class="badge project-type">Solo Project</span></h2>
@@ -206,46 +239,61 @@
                         <div class="content">
                             <div class="item">
                                 <h3 class="title">Clinical Care Manager - <span class="place"><a href="https://www.rmhumanservices.org/">Rocky Mtn Human Services</a></span> <span class="year">(2022 - 2023)</span></h3>
-                                <li>Contributed to cutting-edge EHR system development through active focus group participation, ensuring timely completion of all admin, management, and user profile checkpoints.</li>
-                                <li>Collaborated effectively within the Forensic Support Team in the Community Transitions program, building strong connections with partners and clients across 16 counties, resulting in improved program transitions and positive outcomes for numerous individuals.</li>
+                                <li>Played a key role in advancing EHR system development by employing analytical problem-solving skills within an active Agile group.</li>
+                                <li>Ensured the timely completion of admin, management, and user profile checkpoints during the development process.</li>
+                                <li>Successfully collaborated within the Forensic Support Team of the Community Transitions program.</li>
+                                <li>Established strong connections with partners and customers across 16 counties to enhance teamwork and program effectiveness.</li>
+                                <li>Utilized technology to connect individuals with relevant resources, leading to improved program transitions and positive outcomes for numerous individuals.</li>
+
                             </div><!--//item-->
                            
                             <div class="item">
                                 <h3 class="title">Music Teacher - <span class="place"><a href="https://www.schoolofrock.com/locations/broomfield">School of Rock</a></span> <span class="year">(2021 - 2022)</span></h3>
-                                <li>Utilized a web-based learning system for efficient lesson organization, enhancing interaction between teachers and students, and improving learning efficiency.</li>
-                                <li>Instructed drums, guitar, and piano for youth and adults, boosting student retention and satisfaction by approximately 25% through personalized instruction and tailored approaches.</li>
+                                <li>Implemented a web-based learning system to organize lessons efficiently, improve interaction between teachers and students, and enhance overall learning efficiency and customer success.</li>
+                                <li>Instructed drums, guitar, and piano for both youth and adults, achieving approximately 25% higher student retention and satisfaction through personalized instruction and tailored approaches.</li>
+
                             </div><!--//item-->
                            
                             <div class="item">
                                 <h3 class="title">Music Teacher - <span class="place"><a href="https://www.bachtorock.com/johnscreek/">Bach to Rock</a></span> <span class="year">(2019 - 2020)</span></h3>
-                                <li>Provided comprehensive instruction in drums, guitar, piano, and vocals, enhancing students’ proficiency across all instruments.</li>
-                                <li>Fostered increased engagement and active participation, resulting in positive feedback from 90%+ of students and families, boosting musical appreciation and confidence.</li>
+                                <li>Delivered comprehensive instruction in drums, guitar, piano, and vocals to enhance students' proficiency across all instruments.</li>
+                                <li>Cultivated increased engagement and active participation, leading to positive feedback from over 90% of students and their families, thereby boosting musical appreciation and confidence.</li>
+
                             </div><!--//item-->
                             
                             <div class="item">
                                 <h3 class="title">Housing Case Manager - <span class="place"><a href="https://www.mhpcolorado.org/">Mental Health Partners</a></span> <span class="year">(2019 - 2020)</span></h3>
-                                <li>Provided compassionate counseling and case management to clients with mental/behavioral health challenges, physical disabilities, and housing issues.</li>
-                                <li>Improved clients' mental well-being, facilitated stable housing placements, and connected hundreds to community resources, reducing crisis situations.</li>
+                                <li>Offered counseling and case management services to clients facing mental/behavioral health challenges, physical disabilities, and housing issues.</li>
+                                <li>Adhered to HIPPA regulations while handling customer complaints with patience and professionalism.</li>
+                                <li>Facilitated housing placements and connected hundreds of individuals to community resources.</li>
+                                <li>Utilized a collaborative team approach, effective communication strategies, and empathy to achieve a significant reduction in crises.</li>
+
                             </div><!--//item-->
                           
                             <div class="item">
                                 <h3 class="title">Care Coordinator - <span class="place"><a href="https://www.mhpcolorado.org/">Mental Health Partners</a></span> <span class="year">(2019 - 2020)</span></h3>
-                                <li>Provided impactful Supportive Counseling, life coaching, and Targeted Case Management services.</li>
-                                <li>Improved clients' emotional well-being and self-awareness.</li>
-                                <li>Enhanced treatment adherence, goal achievement, and sense of community in Health RHYTHMS drum circle.</li>
+                                <li>Delivered impactful Supportive Counseling, life coaching, and Targeted Case Management services to clients.</li>
+                                <li>Improved clients' emotional well-being and self-awareness, as evidenced by self-report survey data.</li>
+                                <li>Facilitated treatment adherence and goal achievement by providing assistance with technology and practical steps.</li>
+                                <li>Helped clients navigate local resources for therapy, substance abuse treatment, housing, and connection to medical providers.</li>
+
                             </div><!--//item-->
                          
                             <div class="item">
-                                <h3 class="title">Colorado Peace Officer - <span class="place"><a href="https://adamssheriff.org/contact-us">Adams County Sheriff's Office</a></span> <span class="year">(2014 - 2018)</span></h3>
-                                <li>Utilized Record and Jail Management Systems, ensuring 100% accuracy in processing and maintaining confidential records by cross-referencing with government databases.</li>
-                                <li>Streamlined administrative procedures as a notary public, reducing processing time and enhancing operational efficiency in the Booking and Releasing Unit handling 100+ cases daily.</li>
+                                <h3 class="title">Deputy Sheriff - <span class="place"><a href="https://adamssheriff.org/contact-us">Adams County Sheriff's Office</a></span> <span class="year">(2014 - 2018)</span></h3>
+                                <li>Utilized Record and Jail Management Systems for processing and maintaining confidential records, achieving 95-100% accuracy through cross-referencing with government databases, chain-of-custody information, and property details.</li>
+                                <li>Streamlined administrative procedures as a notary public in the Booking and Releasing Unit, reducing processing time and enhancing operational efficiency for handling 100+ cases daily.</li>
+                                <li>Managed customer concerns and grievances, offering clear information on procedural and technical matters.</li>
+                                <li>Provided high-quality customer service and support to visitors, residents, various staff levels, and government officials.</li>
+
                             </div><!--//item-->
                          
                             <div class="item">
                                 <h3 class="title">Care Coordinator - <span class="place"><a href="https://www.codac.org/services/mental-behavioral-health/">CODAC Behavioral Health Services</a></span> <span class="year">(2013 - 2014)</span></h3>
-                                <li>Provided vocational training and group mentoring to youth offenders in a group-home setting.</li>
-                                <li>Achieved significant improvement in vocational skills and job readiness, assessed through performance evaluations.</li>
-                                <li>Noted an increase in participants' self-confidence and motivation for personal and professional growth, based on pre-and post-program surveys.</li>
+                                <li>Led guided hikes and community outings for young adult teams to foster bonding and personal growth.</li>
+                                <li>Enhanced participants' connection to nature and physical well-being, as reported by themselves, through a collaborative and inclusive approach.</li>
+                                <li>Received positive feedback from 90% of participating young adults, acknowledging improved motivation and teamwork skills.</li>
+
                             </div><!--//item-->
                          
                             <div class="item">
@@ -328,7 +376,7 @@
                                 </div><!--//item-->
                                 <br />
                                 <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3 &amp; Bootstrap</h3>
+                                    <h3 class="level-title">HTML5, CSS3 &amp; Bootstrap, Tailwind</h3>
                                     <div class="level-bar progress">
 									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 65%" aria-valuenow="93"  aria-valuemin="0" aria-valuemax="96"></div>
 									</div><!--//level-bar-->                                  
@@ -337,8 +385,14 @@
                                 <div class="item">
                                     <div class="exposure-container">
                                         <div class="column">
-                                            <h3 class="level-title">Exposure </h3>
+                                            <h3 class="level-title">Technical Competencies </h3>
                                                 <ul class="exposure-list">
+                                                    <li>Terraform </li>
+                                                    <li>Docker </li>
+                                                    <li>Kubernetes </li>
+                                                    <li>AWS </li> 
+                                                    <li>Google Cloud </li>
+                                                    <li>Azure </li>
                                                     <li>GoLang </li>
                                                     <li>Java </li>
                                                     <li>Spring </li>
@@ -351,13 +405,13 @@
                                                     <li>Git </li>
                                                     <li>GraphQL </li> 
                                                     <li>Heroku </li> 
+                                                    <li>Render </li>
+                                                    <li>Vercel </li>
+                                                    <li>WebSockets </li>
                                                     <li>Postman </li> 
                                                     <li>RSpec </li> 
                                                     <li>User Authentication </li> 
                                                     <li>Accessibility </li> 
-                                                    <li>AWS </li> 
-                                                    <li>Google Cloud </li>
-                                                    <li>Azure </li>
                                                     <li>OAuth </li>
                                                     <li>JSON </li>
                                                     <li>API </li>
@@ -367,8 +421,6 @@
                                                     <li>Sidekiq </li> 
                                                     <li>Redis </li>
                                                     <li>AI </li>
-                                                    <li>Docker </li>
-                                                    <li>Kubernetes </li>
                                                     <li>CyberSecurity </li>
                                                     <li>Networking </li>
                                                 </ul>
@@ -389,7 +441,11 @@
                                     <p><i class="fas fa-quote-left"></i>Allen is dedicated, patient, and thorough.  He is a team player and you can rely on him to be prepared and productive!</p>
                                 </blockquote>                                                                           
                             </div><!--//item-->
-                            
+                            <div class="item">
+                                <blockquote class="quote">                                  
+                                    <p><i class="fas fa-quote-left"></i>I highly recommend Allen for his exceptional technical expertise in Ruby on Rails. His proficiency is evident in the seamless solutions he develops. Beyond his technical prowess, Allen's professional demeanor adds a commendable touch to collaborative efforts. He consistently steps outside his comfort zone, tackling challenging tasks with determination and delivering results that exceed expectations.</p>
+                                </blockquote>                                                                           
+                            </div><!--//item-->
                             <p><a class="more-link" href="https://www.linkedin.com/in/garyallenrusselljr/"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p> 
                             
                         </div><!--//content-->
@@ -400,6 +456,10 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Education</h2>
                         <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Certificate in Cloud Computing & DevOps</h3>
+                                <h4 class="university">The Cloud Bootcamp LLC <span class="year">(2024)</span></h4>
+                            </div><!--//item-->
                             <div class="item">                      
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> Certificate in Back-End Engineering</h3>
                                 <h4 class="university">Turing School for Software and Design <span class="year">(2023)</span></h4>
@@ -454,6 +514,7 @@
                                 <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/playlist/37i9dQZF1DWXLeA8Omikj7?si=bfef1b15ab8c4e06">Brain Food</a></li>
                                 <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/artist/0lYoJnsYMVaAitj1pZVqER?si=nR-xpC8OR-CFyTyBEJL8hw">Ben Lucas Boysen</a></li>
                                 <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/playlist/37i9dQZF1E4ncl7Bh46ZnH?si=8f5b9274a0334086">Tigran Hamasyan Radio</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/playlist/37i9dQZF1E8PV4ozC53P4G?si=ae68d9f9eb91461e">Expansive Radio</a></li>
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
