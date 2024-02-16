@@ -33,9 +33,9 @@
 		            <%= image_tag('profile.png', class: 'profile-image img-fluid float-start rounded-circle', alt: 'profile image') %>
 		            <div class="profile-content">
 		                <h1 class="name" style="padding-left: 30px;">Gary "Allen" Russell Jr </h1>
-		                <h1 class="desc" style="padding-left: 30px;">Web Developer | Freelance Musician</h1>
+		                <h1 class="desc" style="padding-left: 30px;">Web Developer | Musician</h1>
 
-		                <ul class="social list-inline">
+		                <ul class="social list-inline align-items-center">
 		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/garyallenrusselljr/"><i class="fab fa-linkedin-in"></i></a></li>
 		                    <li class="list-inline-item"><a href="https://github.com/garussell"><i class="fab fa-github-alt"></i></a></li> 
 		                    <li class="list-inline-item"><a href="https://terminal.turing.edu/profiles/1977"><img src="https://terminal.turing.edu/assets/turing_logo_gray-2bc6bdc736890907f536f2d188d7d20ffe8e8b28764bdc724867dcfb78cd1b77.png" alt="Turing Logo" style="width: 34px; height: 34px; background-color: 'current color'; margin-top: 1px;"></a></li> 
@@ -66,22 +66,11 @@
             <div class="primary col-lg-8 col-12">
                 <section class="about section">
                     <div class="section-inner shadow-sm rounded">
-                        <h1 class="heading">Curriculum Vitae</h1><br />
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>I'm a Denver-based Software Developer with over a decade of human services mid-level management experience, focusing on connecting individuals to vital resources and improving mental health. My public service social work background has instilled empathy and a commitment to human-centered approaches.</p>
-                            <p>Now in my late 30s, I've transitioned into technology and engineering, bringing a wealth of knowledge and a passion for building. I leverage my skills in listening to people's stories to resolve issues using high-tech web solutions.</p>
-                            <p><strong>Tech Transition</strong></p>
-                            <p>My tech transition is owed to the Turing community and ongoing training from platforms like The Cloud Bootcamp, CodeAcademy.com, LinkedIn, and gaining inspiration from meetups. While Ruby and Ruby on Rails hold a special place in my heart, I've explored Python, dabbled in C# via Turing's "Launch" curriculum, and also a collaborative project that used GoLang. To match my front-end skills with my back-end, I have shifted my focus to React after months of vanilla JavaScript.  Furthermore, I have used Java with IntelliJ IDEA to build simplified versions of data structures including Blockchains, and a Simple-Aged-Cache through continued studies at CU Boulder for Computer Science.</p>
-                            <p>I excel in building fast back-ends pulling data from microservices, serving clean JSON structures to the front end with user authentication best practices, and data from PostgreSQL models. I follow Test-Driven Development (TDD), having robust test suites in my applications in addition to load testing with Locust, and using Postman to test API requests and validate them with assertions.  I also adhere to principles of Behavior Driven Development (BDD) when "dream driving", particularly on the front-end</p>
-                            <p><strong>Tools & Processes</strong></p>
-                            <p>My development process includes using Git for version control, and GitHub for collaboration. I have experience with Agile methodologies, and I'm comfortable with pair programming as well as working in a remote environment. I'm familiar with CD/CI, having used CircleCI, GitHub Actions, and Heroku, and I'm familiar with Docker and Kubernetes. My expertise includes managing deployments with Terraform to orchestrate Kubernetes clusters across multiple cloud platforms, including AWS and Google Cloud.</p>
-                            <p>I have primarily used a RESTful API design and implementation, but I have one project with GraphQL and am familiar with WebSockets. I have focused a great deal on accessibility and user authentication, having experience with Auth0 by Okta, Google OAuth, and JSON Web Tokens (JWT). I use Redis for caching API data and Sidekiq for background jobs, and I'm becoming increasingly familiar with AI and machine learning, having used OpenAI API and TensorFlow. I completed an Udemy course on CyberSecurity and Networking, and I'm familiar with Quality Assurance as well.</p>
-                            <p>In my development work with Ruby on Rails, I rely on gems like VCR/Webmock, shoulda-matchers, jsonapi-serializer, factorybot/faker, launchy, orderly, pry, as well as rubocop and codeclimate, to boost productivity and maintain high coding standards.  I have also successfully implemented ActionMailer, ActiveStorage, well versed in ActiveRecord, ActiveJob, ActionCable, and utilizing gems for Tailwind and Bootstrap, as well as importing JavaScript libraries such as Leaflet.</p>
-                            <p><strong>Learning Path</strong></p>
-                            <p>I leaned hard into DevOps for a while to close the knowledge gap between myself and opportunities within Cloud Development using Google Cloud, AWS, and Azure, with automation via Terraform.  I believe this sets me apart as Cloud Computing is quickly becoming the industry standard.  I am also enrolled in "pre-enrollment" courses through CU Boulder, which include "Fundamentals of Software Architecture for Big Data," "Software Architecture Patterns for Big Data", and "Applications of Software Architecture for Big Data" as prerequisites for the MS-CS degree.</p>
-                            <p>I am dedicated to my goal of becoming a Senior Developer.  I am human-centered, a proven team player, and eager to embrace challenges. My professional experiences, coupled with my technical skills, equip me to tackle complex problems and deliver innovative solutions. I feel like my tech journey is just beginning.  I am humbled, and I'm excited about what lies ahead.</p>
-                         
+
+                            <%= render 'condensed_about' %>
+
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
@@ -510,6 +499,17 @@
                         </a>
 
                         <a href="https://medium.com/@allenrusselldev" target="_blank">Follow me on Medium</a></p>
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                 <br />
+                <aside class="list music aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Check out my band</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><a href='https://www.bearandthebeasts.com'>Visit Bear and the Beasts</a></li>
+                            </ul>
+                        </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
                 <br />
